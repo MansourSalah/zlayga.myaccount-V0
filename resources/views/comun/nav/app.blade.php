@@ -1,13 +1,16 @@
 @include('comun.nav.css')
-<div class="site-navbar py-2" style="box-shadow: 0px -3px 12px 5px rgb(0 0 0 / 61%);">
-    <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
+<div class="site-wrap">
+
+
+    <div class="site-navbar py-2">        
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
             <div class="logo">
                 <div class="site-logo">
-                <a href="/" class="js-logo-clone">R.<span style="color:#3329cc">Account</span></a>
+                <a href="/" class="js-logo-clone">My<span style="color:#3329cc">Account</span></a>
                 </div>
             </div>
-            <div class="main-nav d-none d-lg-block" style="margin-left: auto;">
+            <div class="main-nav d-none d-lg-block">
                 <nav class="site-navigation text-right text-md-center" role="navigation">
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
                         <li name="informations"><a href="{{route('informations')}}" onclick="navig(event,this)">{{__('personalInfo')}}</a></li>
@@ -23,7 +26,7 @@
                                     </ul>
                                 </li>
                                 <hr>
-                                <li><a href="#">{{__('logout')}}</a></li>
+                                <li><a href="/logout">{{__('logout')}}</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -33,9 +36,10 @@
                 <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
                     class="icon-menu"></span></a>
             </div>
-
+            </div>
         </div>
-    </div><!--container-->
-</div><!--site navbar-->
+    </div>
+</div>
+
 @include('comun.nav.js')
 

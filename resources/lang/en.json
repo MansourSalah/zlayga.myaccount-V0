@@ -27,5 +27,7 @@
     "success":"Success Operation",
     "unsuccess":"Unsuccess Operation",
     "actionSuccess":"Congratulations, the operation was completed successfully.",
-    "erreurDonnee":"Please enter the correct data."
+    "erreurDonnee":"Please enter the correct data.",
+    "erreurPassword":"Please confirm your password",
+    "erreurChangePassword":"An error occurred. We cannot change your password. Please try again later."
 }
