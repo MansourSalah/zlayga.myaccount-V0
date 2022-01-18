@@ -39,7 +39,6 @@ class Auth{
     }
     public static function logout($user_id,$session_token){
         $x_token=hash("sha256",$user_id.$session_token.env('APP_KEY'),false);
-        
         $response = Http::get(env("URL_ACCOUNTS").'/ext/api/user/logout?session_token='.$session_token."&uid=".$user_id."&x_token=".$x_token);        
         return $response['flag'];
     }

@@ -16,6 +16,7 @@
             $("#loading").css("display","none");
             if(data['flag']) span="<span style='color:green;'>";
             else span="<span style='color:red;'>"
+            $("input").val('');
             $.dialog({
                 title: span+data['title']+"</span>",
                 content: data['message'],

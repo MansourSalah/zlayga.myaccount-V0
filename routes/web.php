@@ -34,5 +34,6 @@ Route::post("/api/user/informations/edit",[informations\InformationsController::
 Route::post("/api/user/security/edit",[informations\SecurityController::class,'edit'])->middleware(['language','myAuth']);
 
 Route::get("/logout",function(){
-    return Auth::logout(Session::get("auth_user")['user_id'],Session::get("auth_user")['session_token']);
+    $response=Auth::logout(Session::get("auth_user")['user_id'],Session::get("auth_user")['session_token']);
+    return redirect("/");
 });
